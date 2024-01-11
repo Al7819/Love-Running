@@ -116,22 +116,6 @@ main {
     color: #ffffff;
 }
 
-/* Footer */
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
-    
-}
-
 #reasons {
     width: 90%;
     margin: 20px;
@@ -174,6 +158,47 @@ hr {
     align-items: center;
     justify-content: center;
 }
+
+ #times {
+     background: url("../images/dublin-city.webp") no-repeat center/cover;
+     /* Handles resposivity without the need fro media query */
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ #times div {
+     color: #fafafa;
+     background-color: rgba(0, 0, 0, .6);
+     padding: 15px;
+     text-align: center;
+     /* This will not wrap on screens of less than 400px.
+     Each div will expand to fill the available space on its row */
+     flex-basis: 200px;
+     flex-grow: 1;
+     /* Creates a grid of meetup times divide over images */
+     border: 2px soild white;
+ }
+
+ #times h3 {
+    /* Override the heading color set in general styles */
+     color: #fafafa;
+ }
+
+ /* Footer */
+ #social-networks {
+     text-align: center;
+     padding: 20px 0;
+     display: flex;
+     justify-content: space-evenly;
+     list-style-type: none;
+ }
+
+ #social-networks i {
+     font-size: 160%;
+     padding: 5%;
+     color: #3a3a3a;
+
+ }
 
 /*Media query tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
@@ -232,8 +257,8 @@ hr {
     #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
-    }
-    
+    }  
+  
     
 }
 
